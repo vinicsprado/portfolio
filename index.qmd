@@ -1,7 +1,288 @@
 ---
-title: "Portfolio Vinicius Prado"
+title: Meu Portfólio
+subtitle: "Cientista de Dados | Analista de BI"
+format:
+  html:
+    css: styles.css
+    page-layout: full
+    theme: none
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 ---
 
-This is a Quarto website. eduarado
+::: {.hero-section}
+# Olá, eu sou [Vinicius Prado]{.accent-text}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<span id="typed-output"></span>
+
+[Ver Projetos](#projetos){.btn-primary}
+[Contato](#contato){.btn-secondary}
+
+<div class="theme-switch-wrapper">
+  <span>Alternar tema</span>
+  <label class="theme-switch">
+    <input type="checkbox" id="theme-toggle">
+    <span class="slider round"></span>
+  </label>
+</div>
+
+<div class="scroll-down">
+  <span>Role para baixo</span>
+  <i class="fas fa-chevron-down"></i>
+</div>
+:::
+
+# Sobre Mim {#sobre .section-title data-aos="fade-up"}
+
+![Foto de perfil](foto_vinicius.jpeg){.profile-image data-aos="zoom-in"}
+
+Sou um entusiasta da área de dados, apaixonado por transformar informações em insights valiosos para tomada de decisões. Com experiência em análise de dados, visualização e business intelligence, tenho trabalhado em diversos projetos que envolvem desde a coleta e tratamento de dados até a criação de dashboards interativos e modelos preditivos.
+
+Minha jornada na área de dados começou há X anos, e desde então venho constantemente aprimorando minhas habilidades técnicas e conhecimentos em ferramentas e metodologias para análise de dados.
+
+Quando não estou explorando dados, gosto de [seus hobbies e interesses]. Acredito que essas atividades me ajudam a manter uma perspectiva equilibrada e criativa para resolver problemas complexos.
+
+# Minhas Habilidades {#habilidades .section-title data-aos="fade-up"}
+
+::: {.skills-container .central-aligned}
+- Power BI
+- SQL
+- Python
+- R Studio
+- Looker Studio
+- Excel Avançado
+- ETL/Data Pipeline
+- Estatística
+- Visualização de Dados
+:::
+
+# Projetos em Destaque {#projetos .section-title data-aos="fade-up"}
+
+::: {.projects-container}
+::: {.project-card data-aos="flip-left"}
+![Dashboard de Vendas](project1-placeholder.jpg){.project-image}
+
+### Dashboard de Vendas
+
+Dashboard interativo para análise de vendas, desenvolvido com Power BI. Inclui análise de tendências, segmentação por região e produto, e previsões de vendas futuras.
+
+**Tecnologias:** Power BI, DAX, SQL
+
+::: {.project-links}
+[Código](https://github.com){.project-link}
+[Demo](https://exemplo.com){.project-link}
+:::
+:::
+
+::: {.project-card data-aos="flip-left" data-aos-delay="100"}
+![Modelo Preditivo](project2-placeholder.jpg){.project-image}
+
+### Modelo Preditivo
+
+Desenvolvimento de um modelo de machine learning para prever a rotatividade de clientes, com acurácia de 85%. Inclui análise exploratória, feature engineering e validação cruzada.
+
+**Tecnologias:** Python, Scikit-learn, Pandas, Matplotlib
+
+::: {.project-links}
+[Código](https://github.com){.project-link}
+[Demo](https://exemplo.com){.project-link}
+:::
+:::
+
+::: {.project-card data-aos="flip-left" data-aos-delay="200"}
+![ETL Pipeline](project3-placeholder.jpg){.project-image}
+
+### ETL e Data Pipeline
+
+Implementação de um pipeline de dados automatizado para extrair dados de múltiplas fontes, transformá-los e carregá-los em um data warehouse para análise.
+
+**Tecnologias:** Python, Airflow, AWS, SQL
+
+::: {.project-links}
+[Código](https://github.com){.project-link}
+[Demo](https://exemplo.com){.project-link}
+:::
+:::
+:::
+
+# Entre em Contato {#contato .section-title data-aos="fade-up"}
+
+::: {.contact-container}
+
+## Informações de Contato {.contact-info-title data-aos="fade-right"}
+
+Sinta-se à vontade para entrar em contato comigo para discutir projetos de dados, oportunidades de colaboração ou apenas para trocar ideias sobre análise de dados e BI:
+
+- <i class="fas fa-envelope"></i> viniciusantunesdoprado@gmail.com
+- <i class="fas fa-phone"></i> +55 (41) 99661-9033
+- <i class="fas fa-map-marker-alt"></i> Curitiba, Paraná, Brasil
+
+::: {.social-links}
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vinicsprado)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/viniciusaprado/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/viniciusadoprado)
+:::
+
+## Formulário de Contato {.contact-form-title data-aos="fade-left"}
+
+::: {#contact-form .contact-form}
+Nome  
+<input type="text" id="name" placeholder="Seu nome" required>
+
+Email  
+<input type="email" id="email" placeholder="seu.email@exemplo.com" required>
+
+Assunto  
+<input type="text" id="subject" placeholder="Assunto da mensagem" required>
+
+Mensagem  
+<textarea id="message" rows="5" placeholder="Sua mensagem" required></textarea>
+
+<button type="submit" class="btn-primary">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+:::
+
+:::
+
+::: {.footer}
+© 2025 Seu Nome. Todos os direitos reservados.
+
+[Início](#){.footer-link}
+[Sobre](#sobre){.footer-link}
+[Habilidades](#habilidades){.footer-link}
+[Projetos](#projetos){.footer-link}
+[Contato](#contato){.footer-link}
+:::
+
+```{=html}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar AOS (Animate On Scroll)
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-out-cubic'
+    });
+    
+    // Efeito de digitação
+    const typed = new Typed('#typed-output', {
+      strings: ['Cientista de Dados', 'Analista de BI', 'Engenheiro de Dados', 'Entusiasta de Data Science'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 2000,
+      loop: true,
+      showCursor: true,
+      cursorChar: '|'
+    });
+    
+    // Alternância de tema claro/escuro
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    
+    // Verificar preferência salva
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      body.classList.add('light-theme');
+      themeToggle.checked = true;
+    }
+    
+    themeToggle.addEventListener('change', function() {
+      if (this.checked) {
+        body.classList.add('light-theme');
+        localStorage.setItem('theme', 'light');
+      } else {
+        body.classList.remove('light-theme');
+        localStorage.setItem('theme', 'dark');
+      }
+    });
+    
+    // Animação de rolagem suave para links de âncora
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        } else {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+    
+    // Adicionar efeito hover para cards de projeto
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+      const image = card.querySelector('.project-image');
+      const links = card.querySelector('.project-links');
+      
+      card.addEventListener('mouseenter', function() {
+        if (image) {
+          image.style.transform = 'scale(1.1)';
+        }
+        if (links) {
+          links.style.opacity = '1';
+        }
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        if (image) {
+          image.style.transform = 'scale(1)';
+        }
+        if (links) {
+          links.style.opacity = '0';
+        }
+      });
+    });
+    
+    // Estilizar formulário de contato
+    const formInputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
+    formInputs.forEach(input => {
+      const label = input.previousSibling.textContent.trim();
+      
+      // Criar wrapper para o grupo de formulário
+      const formGroup = document.createElement('div');
+      formGroup.className = 'form-group';
+      
+      // Criar label para o input
+      const labelEl = document.createElement('label');
+      labelEl.setAttribute('for', input.id);
+      labelEl.textContent = label;
+      
+      // Substituir texto e input pelo grupo de formulário
+      input.parentNode.insertBefore(formGroup, input);
+      formGroup.appendChild(labelEl);
+      formGroup.appendChild(input);
+      
+      // Remover o nó de texto (label)
+      input.previousSibling.remove();
+      
+      // Adicionar eventos para animação do label
+      input.addEventListener('focus', function() {
+        formGroup.classList.add('focused');
+      });
+      
+      input.addEventListener('blur', function() {
+        if (this.value === '') {
+          formGroup.classList.remove('focused');
+        }
+      });
+      
+      // Verificar se o campo já tem valor ao carregar
+      if (input.value !== '') {
+        formGroup.classList.add('focused');
+      }
+    });
+  });
+</script>

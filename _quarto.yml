@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: "."
-  
+
 website:
   title: "portfolio"
   navbar:
@@ -20,3 +20,4 @@ format:
 
 
 
+    
